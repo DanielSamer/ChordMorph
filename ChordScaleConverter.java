@@ -41,7 +41,7 @@ public class ChordScaleConverter {
             System.out.println("Invalid scale name(s). Please enter a valid scale name.");
             return;
         }
-            
+            //first push 
         
     }
 }
