@@ -63,6 +63,7 @@ public class ChordScaleConverter {
                 System.out.println("Invalid chord: " + chord);
                 return;
             }
+
         }
         System.out.println("Converted chords: " + String.join(" ", transposedChords));
 
