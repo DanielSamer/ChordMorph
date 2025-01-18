@@ -31,13 +31,13 @@ public class ChordScaleConverter {
         //Input the source and target scales
         String sourceScale;
         do {
-            System.out.print("Enter the source scale (e.g., C major): ");
+            System.out.print("Enter the source scale (e.g., C Major): ");
             sourceScale = scanner.nextLine().trim(); //trim() removes leading and trailing whitespaces
         } while (!isScaleValid(sourceScale)); //helper method 3
         
         String targetScale;
         do {
-            System.out.print("Enter the target scale (e.g., D major): ");
+            System.out.print("Enter the target scale (e.g., D Major): ");
             targetScale = scanner.nextLine().trim();
         } while (!isScaleValid(targetScale)); //helper method 3
         
@@ -56,6 +56,7 @@ public class ChordScaleConverter {
         //Check if the source and target scales are valid
         if (!SCALE_POSITIONS.containsKey(sourceRoot) || !SCALE_POSITIONS.containsKey(targetRoot)) {
             System.out.println("Invalid scale name(s). Please enter a valid scale name.");
+            scanner.close();
             return;
         }
 
@@ -76,13 +77,15 @@ public class ChordScaleConverter {
                 transposedChords.add(CHROMATIC_SCALE[transposedPosition] + suffix );
             } else {
                 System.out.println("Invalid chord: " + chord);
+                scanner.close();
                 return;
             }
 
         }
-        System.out.println("Converted chords: " + String.join(" ", transposedChords));
-
         // Output the transposed chords 
+        System.out.println("Converted chords: " + String.join(" ", transposedChords));
+        scanner.close();
+        
     }
 
    //Helper method, gets the Root note from the chord
