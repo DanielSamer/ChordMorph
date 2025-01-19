@@ -104,6 +104,10 @@ public class ChordScaleConverter {
                 System.out.println("Invalid chord: " + chord);
                 return false;
             }
+            if (chord.length() > 1 && chord.charAt(1)!= 'm' && chord.charAt(1) != '#') {  
+                System.out.println("Invalid chord: " + chord);
+                return false;
+            }
         }
         return true;
     }
@@ -116,6 +120,4 @@ public class ChordScaleConverter {
         }
         return true; 
     }
-
-
 }
