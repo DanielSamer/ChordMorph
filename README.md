@@ -55,7 +55,7 @@ Converted chords: D A Bm G
 🔹 Expand scale support (e.g., **modes, blues scale**).
 
 ## Software Engineering 
-This project demonstrates **algorithmic problem-solving**, **data structures (HashMaps & Arrays)**, and **real-world application of music theory in programming**. It highlights strong Java skills, clean code practices, and a clear understanding of user needs.
+This project demonstrates **algorithmic problem-solving**, **data structures (HashMaps & Arrays)**, and **real-world application of music theory in programming**. 
 
 ## 🤝 Contributing
 Contributions are welcome! Feel free to submit pull requests or report issues.
